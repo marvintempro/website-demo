@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nimbus IT Solutions</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">Nimbus IT Solutions</div>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>IT support that keeps your business running</h1>
+  <p>Managed IT, cybersecurity, cloud, and help desk services for growing companies. Fast response, flat pricing, no surprises.</p>
+  <a href="#contact" class="btn">Get a Free Consultation</a>
+</section>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <p class="subtitle">Everything you need to keep your technology working for you, not against you.</p>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="icon">🖥️</div>
+      <h3>Managed IT Support</h3>
+      <p>24/7 monitoring, help desk, and proactive maintenance so issues get fixed before they cause downtime.</p>
+    </div>
+    <div class="service-card">
+      <div class="icon">🔒</div>
+      <h3>Cybersecurity</h3>
+      <p>Endpoint protection, firewall management, and security awareness training to keep your business safe.</p>
+    </div>
+    <div class="service-card">
+      <div class="icon">☁️</div>
+      <h3>Cloud Services</h3>
+      <p>Migration, backup, and management for Microsoft 365, Google Workspace, and cloud infrastructure.</p>
+    </div>
+    <div class="service-card">
+      <div class="icon">🌐</div>
+      <h3>Networking</h3>
+      <p>Design, installation, and support for wired and wireless networks across single or multi-site offices.</p>
+    </div>
+    <div class="service-card">
+      <div class="icon">💾</div>
+      <h3>Backup & Disaster Recovery</h3>
+      <p>Automated backups and recovery plans so you're never more than a few clicks from being back online.</p>
+    </div>
+    <div class="service-card">
+      <div class="icon">📞</div>
+      <h3>VoIP & Communications</h3>
+      <p>Business phone systems and unified communications that scale with your team.</p>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="about-content">
+    <div>
+      <h2 style="text-align:left;">Why teams choose Nimbus</h2>
+      <p style="color:var(--gray);">We've spent over a decade helping small and mid-sized businesses run reliable, secure IT without an in-house team. Our engineers respond fast, explain things in plain language, and treat your infrastructure like it's our own.</p>
+      <div class="stats">
+        <div><div class="num">120+</div><div class="label">Clients supported</div></div>
+        <div><div class="num">15 min</div><div class="label">Avg. response time</div></div>
+        <div><div class="num">99.9%</div><div class="label">Uptime delivered</div></div>
+      </div>
+    </div>
+    <div>
+      <div style="background:var(--light);border-radius:10px;padding:30px;border:1px solid #e3e9ef;">
+        <p style="color:var(--gray);font-style:italic;">"Nimbus caught a ransomware attempt before it ever touched our servers. Worth every penny."</p>
+        <p style="margin-top:12px;font-weight:600;">— Operations Director, regional healthcare provider</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Get in touch</h2>
+  <p class="subtitle">Tell us what's going on and we'll follow up within one business day.</p>
+  <div class="contact-wrap">
+    <div>
+      <form onsubmit="event.preventDefault(); alert('Thanks! This is a demo form — no message was actually sent.');">
+        <input type="text" placeholder="Full name" required>
+        <input type="email" placeholder="Email address" required>
+        <input type="text" placeholder="Company">
+        <textarea placeholder="How can we help?" required></textarea>
+        <button type="submit" class="btn" style="background:var(--blue);color:#fff;">Send Message</button>
+      </form>
+    </div>
+    <div class="contact-info">
+      <p><strong>Phone:</strong> (555) 010-2200</p>
+      <p><strong>Email:</strong> hello@nimbusit.example</p>
+      <p><strong>Hours:</strong> Mon–Fri, 8am–6pm</p>
+      <p>Prefer to chat right now? Use the chat button in the bottom-right corner.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2026 Nimbus IT Solutions. All rights reserved.
+</footer>
+
+<!-- Chat widget -->
+<button id="chat-bubble" aria-label="Open chat">💬</button>
+<div id="chat-panel">
+  <div class="chat-header">
+    <span>Chat with an agent</span>
+    <button id="chat-close" aria-label="Close chat">✕</button>
+  </div>
+  <div id="chat-messages">
+    <div class="msg agent">Hi there! I'm an IT support agent. What can I help you with today?</div>
+  </div>
+  <div class="chat-input-row">
+    <input type="text" id="chat-input" placeholder="Type a message...">
+    <button id="chat-send">Send</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
