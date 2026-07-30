@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nimbus IT Solutions</title>
 <link rel="stylesheet" href="style.css">
+<script 
+src="https://cdn.prod.us.five9.net/static/stable/chat/wrapper/index.js">
+</script>
 </head>
 <body>
 
@@ -107,20 +110,14 @@
 </footer>
 
 <!-- Chat widget -->
-<button id="chat-bubble" aria-label="Open chat">💬</button>
-<div id="chat-panel">
-  <div class="chat-header">
-    <span>Chat with an agent</span>
-    <button id="chat-close" aria-label="Close chat">✕</button>
-  </div>
-  <div id="chat-messages">
-    <div class="msg agent">Hi there! I'm an IT support agent. What can I help you with today?</div>
-  </div>
-  <div class="chat-input-row">
-    <input type="text" id="chat-input" placeholder="Type a message...">
-    <button id="chat-send">Send</button>
-  </div>
-</div>
+
+<script>
+  F9.Chat.Wrapper.init({
+    cdn: 'prod',
+    integrationId: '7a803d62-6a8f-4366-bef8-5d272ba03ee1',
+    chatDeploymentId : '69158184-3c28-46ac-ba3e-c08f4980fee8'
+  });
+</script>
 
 <script src="script.js"></script>
 
